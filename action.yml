@@ -38,4 +38,4 @@ runs:
         run: |
           sudo $(which tailscaled) 2>~/.tailscale/tailscaled.log &
           sleep 3
-          sudo $(which tailscale) up --authkey $TAILSCALE_AUTHKEY --hostname "github-$(cat /etc/hostname)"
+          sudo $(which tailscale) up --authkey $TAILSCALE_AUTHKEY --hostname "github"
